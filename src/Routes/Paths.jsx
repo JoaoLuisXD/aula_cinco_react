@@ -1,18 +1,18 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Produto from "../pages/Produto";
+import Produtos from "../pages/Produtos";
 import Home from "../pages/Home";
+import Header from "../Components/Header";
 
 const Paths = () => {
     return (
-        <>
         <BrowserRouter>
+        <Header/>
             <Routes>
-                <Route path="/" element = {<Home/>}></Route>
-                <Route path="/Produto" element = {<Produto/>}></Route>
+                <Route path="/" element={<Home />} />
+                <Route path="/Produtos" element={<Produtos />} />
             </Routes>
         </BrowserRouter>
-        </>
     );
-}
- 
+};
+
 export default Paths;
